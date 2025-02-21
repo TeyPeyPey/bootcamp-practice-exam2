@@ -135,8 +135,19 @@ const getTopSpecialFeature = function(array, title){
 //Create a function called getTopSpecialFeature that takes in one parameter - array and title. 
 //array represents an array of movie objects; title represents a string of the title of a film. 
 //This function should use recursion to iterate through the array. 
-//If a movie with the title is found, the function should return a string of the movie's title followed by the title of the first special feature in the film's specialFeatures array. 
-//If no movie is found matching that title, the function should return "no movie found matching that title".
+//If a movie with the title is found, the function should 
+//return a string of the movie's title followed by 
+//the title of the first special feature in the film's specialFeatures array. 
+//If no movie is found matching that title, 
+//the function should return "no movie found matching that title".
+if (i === 0) {
+    return array;
+}
+if (array[i].includes(title)) {
+return 'title' + array[i].specialFeatures[0];
+} else if (array[i].includes(title) !== array[i]) {
+    return 'no movie found matching that title';
+}
 };
 
 
