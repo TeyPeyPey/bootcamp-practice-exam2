@@ -108,7 +108,7 @@ const filterByGenreTag = function(array, tag){
 //array represents an array of movie objects; tag represents a string of a certain genre designation. 
 //This function should use the native filter method to return a new array of only the movie objects that contain the input genre tag.
 var output = [];
-output = array.filter(collection.genreTag);
+output = array.filter(array[i].genreTag);
 return output;
 };
 
@@ -184,7 +184,9 @@ const createNonsenseString = function(array, index){
 //array represents an array of movie objects, and index represents the index of a string. 
 //This function should use the native reduce method to iterate over the array 
 //and accumulate a string by accessing the index of each movie's title and adding it to an output string.
-
+var output = '';
+output = array.reduce(array[i].indexOf(title));
+return output;
 };
 
 // PROBLEM #8 //
