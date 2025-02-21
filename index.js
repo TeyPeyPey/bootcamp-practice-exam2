@@ -108,7 +108,7 @@ const filterByGenreTag = function(array, tag){
 //array represents an array of movie objects; tag represents a string of a certain genre designation. 
 //This function should use the native filter method to return a new array of only the movie objects that contain the input genre tag.
 var output = [];
-output = array.filter(object[genreTag])
+output = array.filter(collection.genreTag);
 return output;
 };
 
@@ -123,6 +123,9 @@ const filterBySpecialFeatureType = function(array, type){
 //array represents an array of movie objects; type represents a string describing the type of special feature. 
 //This function should use the native filter method to return a new array 
 //of only the movie objects that contain that type of special feature.
+var output = [];
+output = array.filter(collection[specialFeatures].type);
+return output;
 };
 
 
