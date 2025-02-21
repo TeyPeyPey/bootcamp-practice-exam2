@@ -107,8 +107,12 @@ const filterByGenreTag = function(array, tag){
 //Create a function called filterByGenreTag that takes in two parameters - array and tag; 
 //array represents an array of movie objects; tag represents a string of a certain genre designation. 
 //This function should use the native filter method to return a new array of only the movie objects that contain the input genre tag.
-
+var output = [];
+output = array.filter(object[genreTag])
+return output;
 };
+
+
 
 
 
